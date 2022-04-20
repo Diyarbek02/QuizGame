@@ -11,20 +11,20 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
         binding.apply {
-            etName.addTextChangedListener{
+            etName.addTextChangedListener {
                 tilName.isErrorEnabled = false
             }
 
-            btnEnter.setOnClickListener{
+            btnEnter.setOnClickListener {
                 val name = etName.text.toString()
-                if(name.isEmpty()){
+                if (name.isEmpty()) {
                     tilName.error = getString(R.string.name_error)
-                }else {
+                } else {
                     val intent = Intent(this@MainActivity, gameActivity::class.java)
                     startActivity(intent)
                     finish()

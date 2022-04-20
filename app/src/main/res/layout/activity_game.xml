@@ -9,9 +9,9 @@
     android:background="@drawable/bg_quiz">
 
     <TextView
+        android:id="@+id/tv_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="tv_question"
         android:textSize="32sp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
@@ -58,7 +58,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="42dp"
         android:backgroundTint="@color/white"
-        app:cornerRadius="16dp"/>
+        app:cornerRadius="16dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_submit"

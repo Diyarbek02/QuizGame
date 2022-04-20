@@ -2,4 +2,8 @@
     <string name="app_name">Quiz Game</string>
     <string name="enter_your_name">Enter your name</string>
     <string name="name_error">error</string>
+    <string name="submit">Submit</string>
+    <string name="finish_text">Finish</string>
+    <string name="continue_text">Continue</string>
+    <string name="score_text">Your Score: %d/10</string>
 </resources>
